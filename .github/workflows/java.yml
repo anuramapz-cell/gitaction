@@ -45,7 +45,7 @@ jobs:
             TOMCAT=/opt/tomcat
 
             sudo rm -rf $TOMCAT/webapps/JAVA*
-            sudo mv /home/ec2-user/deploy-temp/*.war $TOMCAT/webapps/JAVA.war
+            sudo mv /home/ec2-user/deploy-temp/*.war /var/lib/tomcat10/webapps/JAVA.war
 
             sudo chmod 644 $TOMCAT/webapps/JAVA.war
 
